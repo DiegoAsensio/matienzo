@@ -1,9 +1,13 @@
 .headerSections {
-  background-color: white;
+  background-color: #77542d;
+}
+
+.carrito {
+  width: 12%;
 }
 
 .mainSections {
-  background-color: #CEAB93;
+  background-color: #14200c;
   padding: 100px 0 100px 0;
 }
 
