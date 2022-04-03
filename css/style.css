@@ -1,5 +1,9 @@
 .headerSections {
-  background-color: #77542d;
+  background-color: #FFFEA9;
+}
+
+.navbar-collapse {
+  padding-left: 20%;
 }
 
 .carrito {
@@ -7,7 +11,7 @@
 }
 
 .mainSections {
-  background-color: #14200c;
+  background-color: #CC9544;
   padding: 100px 0 100px 0;
 }
 
