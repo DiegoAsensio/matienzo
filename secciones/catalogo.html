@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
     <!-- javascript -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script defer src="../stock.js"></script>
     <script defer src="../modal.js"></script>
     <script defer src="../main.js"></script>
@@ -57,13 +59,7 @@
         <div class="modal-carrito">
             <h3>Carrito</h3>
             <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
-            <div id="carrito-contenedor">
-                <!-- <div class="productoEnCarrito">
-                    <p>Buzo 1</p>
-                    <p>Precio: $1200</p>
-                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
-                </div> -->
-            </div>
+            <div id="carrito-contenedor"></div>
             <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
             <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
         </div>
