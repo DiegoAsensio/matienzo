@@ -41,8 +41,9 @@ function contactoEnviado(){
     btn.addEventListener("click", 
     ()=>
     Swal.fire({
+        showConfirmButton: false,
+        timer: 2000,
         title: `Su información nos ha llegado correctamente!`, 
-        text: 'En breve nos pondremos en contacto con usted a traves de la información que nos ha brindado.',
         icon: 'success',
     }));    
 }
