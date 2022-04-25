@@ -37,6 +37,10 @@
   padding: 25px 0 90px 0;
 }
 
+#contactoBtn {
+  background: linear-gradient(to right, #1a880b, #033d02);
+}
+
 img {
   width: 100%;
   margin-bottom: 10px;
@@ -69,7 +73,7 @@ img {
 
 .boton-agregar {
   background-color: green;
-  color: white;
+  color: black;
   font-size: 18px;
   font-weight: 700;
   padding: 5px;
