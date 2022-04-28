@@ -47,8 +47,6 @@ function contactoEnviado(){
         icon: 'success',
     }));    
 }
-
-
 // fin sección contacto
 
 
@@ -77,7 +75,7 @@ botonVaciar.addEventListener('click', () => {
     Toastify({
         text: "Se han eliminado todos los productos",
         duration: 4000,
-        gravity: 'top',
+        gravity: 'bottom',
         position: 'right',
         style: {
             background: "linear-gradient(to right, #00b09b, #96c93d)",
@@ -123,7 +121,7 @@ const agregarAlCarrito = (prodId) => {
     Toastify({
         text: "Se ha agregado este producto al carrito.",
         duration: 4000,
-        gravity: 'top',
+        gravity: 'bottom',
         position: 'right',
         style: {
             background: "linear-gradient(to right, #00b09b, #96c93d)",
@@ -141,7 +139,7 @@ const eliminarDelCarrito = (prodId) => {
     Toastify({
         text: "Se ha eliminado este producto",
         duration: 4000,
-        gravity: 'top',
+        gravity: 'bottom',
         position: 'right',
         style: {
             background: "linear-gradient(to right, #00b09b, #96c93d)",
@@ -169,6 +167,5 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length 
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
     //Por cada producto q recorro en mi carrito, al acumulador le suma la propiedad precio, con el acumulador empezando en 0.
-
 }
 // fin sección catálogo
