@@ -1,4 +1,3 @@
-//sección catálogo
 const contenedorProductos = document.getElementById('contenedor-productos')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 const botonVaciar = document.getElementById('vaciar-carrito')
@@ -29,8 +28,6 @@ botonVaciar.addEventListener('click', () => {
         }
     }).showToast();
 })
-
-const url = 'stock.json'
 
     stockProductos.forEach((producto) => {
         const div = document.createElement('div')
@@ -113,4 +110,3 @@ const actualizarCarrito = () => {
     contadorCarrito.innerText = carrito.length 
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }
-// fin sección catálogo

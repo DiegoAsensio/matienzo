@@ -34,11 +34,27 @@
 
 .mainContainer {
   background-color: #CC9544;
-  padding: 25px 0 90px 0;
+  padding: 25px 0 120px 0;
 }
 
-#contactoBtn {
+.field {
+  margin-bottom: 10px;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+#button {
   background: linear-gradient(to right, #1a880b, #033d02);
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  color: black;
+  border: none;
 }
 
 img {
