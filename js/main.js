@@ -101,19 +101,18 @@ stockProductos.forEach((producto) => {
     })
 })
 
-//AGREGAR AL CARRITO
+
 const agregarAlCarrito = (prodId) => {
 
-    //PARA AUMENTAR LA CANTIDAD Y QUE NO SE REPITA
     const existe = carrito.some (prod => prod.id === prodId)
 
-    if (existe){ //SI YA ESTÁ EN EL CARRITO, ACTUALIZAMOS LA CANTIDAD
+    if (existe){ 
         const prod = carrito.map (prod => { 
             if (prod.id === prodId){
                 prod.cantidad++
             }
         })
-    } else { //EN CASO DE QUE NO ESTÉ, AGREGAMOS EL CURSO AL CARRITO
+    } else { 
         const item = stockProductos.find((prod) => prod.id === prodId)
         carrito.push(item)
     }
@@ -131,10 +130,9 @@ const agregarAlCarrito = (prodId) => {
 
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)
+    const indice = carrito.indexOf(item) 
 
-    const indice = carrito.indexOf(item) //Busca el elemento q yo le pase y nos devuelve su indice.
-
-    carrito.splice(indice, 1) //Le pasamos el indice de mi elemento ITEM y borramos un elemento 
+    carrito.splice(indice, 1) 
     actualizarCarrito()
     Toastify({
         text: "Se ha eliminado este producto",
@@ -165,6 +163,5 @@ const actualizarCarrito = () => {
     
     contadorCarrito.innerText = carrito.length 
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
-    //Por cada producto q recorro en mi carrito, al acumulador le suma la propiedad precio, con el acumulador empezando en 0.
 }
 // fin sección catálogo
