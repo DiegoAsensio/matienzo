@@ -1,56 +1,3 @@
-//sección contacto
-function soloNumeros(e){
-    key=e.keyCode || e.which;
-    teclado=String.fromCharCode(key);
-    numeros="0123456789";
-    especiales="8-37-38-46";
-    teclado_especial=false;
-
-    for(var i in especiales){
-        if(key==especiales[i]){
-            teclado_especial=true
-        }
-    }
-    if(numeros.indexOf(teclado)==-1 && !teclado_especial){
-        return false;
-    }
-}
-
-function soloLetras(e){
-    key=e.keyCode || e.which;
-    teclado=String.fromCharCode(key).toLowerCase();
-    letras=" abcdefghijklmnñopqrstuvwxyzáéíóúü";
-    especiales="8-37-38-46-164";
-    teclado_especial=false;
-
-    for(var i in especiales){
-        if(key==especiales[i]){
-            teclado_especial=true;break;
-        }
-    }
-    if(letras.indexOf(teclado)==-1 && !teclado_especial){
-        return false;
-    }
-}
-function init(){
-    contactoEnviado()
-}
-
-function contactoEnviado(){
-    const btn = document.querySelector("#contactoBtn");
-    btn.addEventListener("click", 
-    ()=>
-    Swal.fire({
-        showConfirmButton: false,
-        timer: 2000,
-        title: `Su información nos ha llegado correctamente!`, 
-        icon: 'success',
-    }));    
-}
-// fin sección contacto
-
-
-
 //sección catálogo
 const contenedorProductos = document.getElementById('contenedor-productos')
 const contenedorCarrito = document.getElementById('carrito-contenedor')
@@ -83,23 +30,25 @@ botonVaciar.addEventListener('click', () => {
     }).showToast();
 })
 
-stockProductos.forEach((producto) => {
-    const div = document.createElement('div')
-    div.classList.add('producto')
-    div.innerHTML = `
-    <img src=${producto.img} alt= "">
-    <h3>${producto.nombre}</h3>
-    <p>${producto.desc}</p>
-    <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-    `
-    contenedorProductos.appendChild(div)
-    const boton = document.getElementById(`agregar${producto.id}`)
+const url = 'stock.json'
 
-    boton.addEventListener('click', () => {
-        agregarAlCarrito(producto.id)
+    stockProductos.forEach((producto) => {
+        const div = document.createElement('div')
+        div.classList.add('producto')
+        div.innerHTML = `
+        <img src=${producto.img} alt= "">
+        <h3>${producto.nombre}</h3>
+        <p>${producto.desc}</p>
+        <p class="precioProducto">Precio:$ ${producto.precio}</p>
+        <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+        `
+        contenedorProductos.appendChild(div)
+        const boton = document.getElementById(`agregar${producto.id}`)
+
+        boton.addEventListener('click', () => {
+            agregarAlCarrito(producto.id)
+        })
     })
-})
 
 
 const agregarAlCarrito = (prodId) => {
