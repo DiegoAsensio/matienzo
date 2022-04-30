@@ -1,3 +1,8 @@
+#mainIndex{
+    background-image: linear-gradient(white, #eaa53e, #875d1e);
+    padding-bottom: 200px;
+}
+
 .mainContainer{
     background-color: #CC9544;
     padding: 25px 0 120px 0;
@@ -14,11 +19,11 @@
 }
 #button{
     background: linear-gradient(to right, #1a880b, #033d02);
-    display: block;
-    padding: 6px 30px;
-    font-size: 14px;
-    color: black;
-    border: none
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 7px;
+    border: none;
 }
 
 img {
@@ -49,11 +54,11 @@ img {
     font-weight: 700;
 }
 .boton-agregar {
-    background-color: green;
-    color: black;
-    font-size: 18px;
+    background: linear-gradient(to right, #1a880b, #033d02);
+    color: white;
+    font-size: 15px;
     font-weight: 700;
-    padding: 5px;
+    padding: 7px;
     border: none;
 }
 .boton-agregar:hover {
@@ -120,7 +125,7 @@ img {
 }
 
 .productoEnCarrito {
-    border-left: 5px solid lightblue;
+    border-left: 5px solid green;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     margin: 5px 0;
