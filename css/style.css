@@ -32,11 +32,6 @@
   outline: none;
 }
 
-#mainIndex {
-  background-image: linear-gradient(white, #eaa53e, #875d1e);
-  padding-bottom: 200px;
-}
-
 .mainContainer {
   background-color: #CC9544;
   padding: 25px 0 120px 0;

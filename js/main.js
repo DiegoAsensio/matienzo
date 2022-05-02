@@ -28,8 +28,11 @@ botonVaciar.addEventListener('click', () => {
         }
     }).showToast();
 })
-
-    stockProductos.forEach((producto) => {
+    const url = ("stock.json")
+    fetch(url)
+    .then( res => res.JSON())
+    .then((producto) => {
+        console.log("producto")
         const div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML = `
