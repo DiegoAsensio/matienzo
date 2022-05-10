@@ -9,8 +9,24 @@
     margin-bottom: 20px;
 }
 .navbar-collapse{
-    padding-left: 20%;
+    padding-left: 5%;
 }
+
+.nav-item a {
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 26px;
+	margin: 0 10px;
+	transition: .5s ease all;
+	color: green;
+	text-decoration: none;
+}
+.nav-item a:hover {
+	transform: translateY(18px);
+	background-color: #eae993;
+    color: green;
+}
+
 #boton-carrito {
     border: none;
     color: green;

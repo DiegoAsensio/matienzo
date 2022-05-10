@@ -28,11 +28,18 @@ botonVaciar.addEventListener('click', () => {
         }
     }).showToast();
 })
-    const url = ("stock.json")
+
+const url = '../js/stock.json';
+
     fetch(url)
-    .then( res => res.JSON())
-    .then((producto) => {
-        console.log("producto")
+    .then( res => res.json())
+    .then(data => crear(data))
+        
+    function crear(data) {
+
+        data.forEach(producto =>{
+            console.log(producto)
+        
         const div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML = `
@@ -48,7 +55,7 @@ botonVaciar.addEventListener('click', () => {
         boton.addEventListener('click', () => {
             agregarAlCarrito(producto.id)
         })
-    })
+    })}
 
 
 const agregarAlCarrito = (prodId) => {
@@ -62,7 +69,7 @@ const agregarAlCarrito = (prodId) => {
             }
         })
     } else { 
-        const item = stockProductos.find((prod) => prod.id === prodId)
+        const item = producto.find((prod) => prod.id === prodId)
         carrito.push(item)
     }
     actualizarCarrito()
@@ -109,7 +116,6 @@ const actualizarCarrito = () => {
     })
     localStorage.setItem('carrito', JSON.stringify(carrito))
 
-    
     contadorCarrito.innerText = carrito.length 
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
 }

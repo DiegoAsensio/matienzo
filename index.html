@@ -23,16 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-success" aria-current="page" href="./index.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-success" href="./secciones/nosotros.html">Nosotros</a>
+            <a class="nav-link active" href="./secciones/nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-success" href="./secciones/catalogo.html">Catálogo</a>
+            <a class="nav-link active" href="./secciones/catalogo.html">Catálogo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-success" href="./secciones/contacto.html">Contacto</a>
+            <a class="nav-link active" href="./secciones/contacto.html">Contacto</a>
           </li>
         </ul>
         <div class="d-flex justify-content-end"></div>
@@ -45,10 +45,82 @@
   </nav>
 </header>
 
-<main id="mainIndex">
- 
-</main>
+<main class="mainHeader">
+  <div class="container bodyHeader">
+		<div class="row nosotros justify-content-center">
+			<div class="col-12 text-center">
+				<h2 class="subtitulo"><span>¿Quienes somos?</span></h2>
+				<h3 class="titulo">La mejor página de mates que podes encontrar en internet.</h3>
+			</div>
+		</div>
 
+    <div class="separador text-center text-white">
+      <p><q>Tu fiel compañero adonde quiera que vayas</q></p>
+    </div>
+
+		<div class="row productos">
+			<article class="col-12 text-center">
+				<h2 class="subtitulo"><span>Lo que ofrecemos</span></h2>
+				<h3 class="titulo">Nuestros Produtos</h3>
+				<p>Encontrá una gran variedad de los mejores mates del mercado y a un precio increible.</p>
+			</article>
+      <div class="px-0 galeria">
+        <div class="row justify-content-center mx-0 px-0">
+          <div class="col-4 px-0 mx-0">
+            <img src="img/artesanal1.jpg" alt="">
+          </div>
+          <div class="col-4 px-0 mx-0">
+            <img src="img/mateGroot.jpg" alt="">
+          </div>
+          <div class="col-4 px-0 mx-0">
+            <img src="/img/imperialCuero.jpg" alt="">
+          </div>
+
+          <button class="d-block btn-productos" onclick="location.href='./secciones/catalogo.html'"><span>Todos los productos</span></button>
+        </div>
+      </div>
+    </div>
+  
+    <div>
+      <div class="row acerca-de justify-content-around">
+        <article class="col-10 col-sm-5">
+          <figure class="text-center">
+            <img src="./img/icon-team.png" class="w-25" alt="">
+            <figcaption>
+              <p>
+                <strong class="mb-2">Un equipo de expertos</strong>
+                <div class="w-100"></div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolorem error.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+  
+        <article class="col-10 col-sm-5">
+          <figure class="text-center">
+            <img src="./img/icon-services.png" class="w-25" alt="">
+            <figcaption>
+              <p>
+                <strong class="mb-2">Una historia de servicio</strong>
+                <div class="w-100"></div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolorem error.
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+      </div>
+    </div>
+  
+    <div>
+      <section class="contacto row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="subtitulo"><span>Visitanos</span></h2>
+        </div>
+  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.4322751633576!2d-58.48013474187471!3d-34.58229369511633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66c42a21c63%3A0x3e7d30dd6d41fbd8!2sG%C3%A1ndara%202697%2C%20C1431DAI%20CABA!5e0!3m2!1ses!2sar!4v1652148843164!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </div>
+</main>
 
 <!-- footer -->
 <footer>
