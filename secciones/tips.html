@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- javascript -->
+    <script defer src="../js/stock.js"></script>
+    <script defer src="../js/modal.js"></script>
+    <script defer src="../js/main.js"></script>
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg headerSections">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="w-50" src="../img/logo3.png" alt="Logo matienzo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-success" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="tips.html">Tips materos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center carrito">
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+<main class="mainHeader">
+  <div class="container bodyHeader">
+    <div class="row nosotros justify-content-center">
+      <div class="col-12 pt-5 text-center">
+        <h2 class="titulo">CÓMO PREPARAR UN BUEN MATE Y CON MONTAÑITA?</h2>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img1.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-center">
+        <p class="fs-3">1) Llená las tres cuartas partes del mate con tu yerba preferida.</p>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img2.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-center">
+        <p class="fs-3">2) Invertí el mate, tapalo con la palma de la mano y agitalo ligeramente. Inclinalo para acumular la yerba en uno de sus lados.</p>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img3.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-center">
+        <p class="fs-3">3) Humedecé la yerba con una pequeña cantidad de agua tibia y colocá la bombilla.</p>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img4.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-center">
+        <p class="fs-3">4) Cebá los mates con agua entre 70ºC y 80ºC sobre la yerba cercana a la bombilla, dejando siempre parte de la yerba seca.</p>
+      </div>
+
+      <div class="col-12 pt-5 text-center">
+        <h2 class="titulo">CÓMO CURAR TU MATE DE MADERA O DE CALABAZA?</h2>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img5.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-center">
+        <p class="fs-3">1) Untá hasta la boca del mate con aceite o manteca.
+          TIP: La manteca le da más sabor a la madera.</p>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img6.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-center">
+        <p class="fs-3">2) Llená a tope con yerba usada y andá humedeciendo durante el día, con pequeñas cantidades de agua.
+          TIP: humedecé, no llenes de agua.</p>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img7.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-center">
+        <p class="fs-3">3) Después de 24hs, retirá y enjuagá.
+          TIP: si queda un poco de manteca no pasa nada, eso hace que se termine de sellar.</p>
+      </div>
+
+      <div class="col-12 pt-5 text-center">
+        <h2 class="titulo">CÓMO LIMPIAR TU BOMBILLA?</h2>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img8.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-start">
+        <p class="fs-3">– Lavala después de cada uso con agua caliente (85° grados o más) y detergente.
+          <br>
+          – Si usás lavavajillas, asegurate que esté seteado con temperatura bien alta.</p>
+      </div>
+      <div class="col-4 d-flex justify-content-end pb-5 pe-5">
+        <img class="w-50" src="../img/img9.jpg" alt="">
+      </div>
+      <div class="col-8 text-start d-flex align-items-start">
+        <p class="fs-3">– Para una limpieza más profunda, sumergila en agua hirviendo con dos cucharadas de bicarbonato de sodio.
+        <br>
+          – En caso de que hayan quedado sedimentos podés utilizar un cepillo de cerdas especial para bombillas.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+<!-- footer -->
+<footer>
+  <nav>
+    <ul class="logoFixed">
+      <li><a href="https://wa.me/+541165163397" target="_blank"><img src="../img/logo-whatsapp.webp" width="50" height="50" alt="Whatsapp"></a></li>
+    </ul>
+  </nav>
+</footer>
+<!-- fin footer -->
+
+
+
+<!-- bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
