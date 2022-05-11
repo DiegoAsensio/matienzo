@@ -1,3 +1,10 @@
+@media (max-width: 440px) {
+  .navbar-toggler {
+    position: fixed;
+    top: 7%;
+    right: 12%;
+  }
+}
 .headerSections {
   background-color: #FFFEA9;
   display: flex;
@@ -373,6 +380,14 @@ img {
   bottom: 0%;
   right: 1%;
   list-style-type: none;
+}
+
+@media (max-width: 440px) {
+  .navbar-toggler {
+    position: fixed;
+    top: 7%;
+    right: 12%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
