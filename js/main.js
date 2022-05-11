@@ -51,12 +51,11 @@ const url = '../js/stock.json';
         `
         contenedorProductos.appendChild(div)
         const boton = document.getElementById(`agregar${producto.id}`)
-
+        
         boton.addEventListener('click', () => {
             agregarAlCarrito(producto.id)
         })
-    })}
-
+    
 
 const agregarAlCarrito = (prodId) => {
 
@@ -69,9 +68,10 @@ const agregarAlCarrito = (prodId) => {
             }
         })
     } else { 
-        const item = producto.find((prod) => prod.id === prodId)
+        const item = data.find((prod) => prod.id === prodId)
         carrito.push(item)
-    }
+    }}
+
     actualizarCarrito()
     Toastify({
         text: "Se ha agregado este producto al carrito.",
@@ -82,7 +82,7 @@ const agregarAlCarrito = (prodId) => {
             background: "linear-gradient(to right, #00b09b, #96c93d)",
         }
     }).showToast();
-}
+}}
 
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)

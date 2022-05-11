@@ -1,7 +1,7 @@
 @media (max-width: 440px) {
   .navbar-toggler {
-    position: fixed;
-    top: 7%;
+    position: absolute;
+    top: 15%;
     right: 12%;
   }
 }
@@ -384,8 +384,8 @@ img {
 
 @media (max-width: 440px) {
   .navbar-toggler {
-    position: fixed;
-    top: 7%;
+    position: absolute;
+    top: 15%;
     right: 12%;
   }
 }
