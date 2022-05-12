@@ -51,11 +51,12 @@ const url = '../js/stock.json';
         `
         contenedorProductos.appendChild(div)
         const boton = document.getElementById(`agregar${producto.id}`)
-        
+
         boton.addEventListener('click', () => {
             agregarAlCarrito(producto.id)
         })
-    
+    })
+
 
 const agregarAlCarrito = (prodId) => {
 
@@ -70,8 +71,7 @@ const agregarAlCarrito = (prodId) => {
     } else { 
         const item = data.find((prod) => prod.id === prodId)
         carrito.push(item)
-    }}
-
+    }
     actualizarCarrito()
     Toastify({
         text: "Se ha agregado este producto al carrito.",
