@@ -38,7 +38,7 @@ const url = '../js/stock.json';
     function crear(data) {
 
         data.forEach(producto =>{
-            console.log(producto)
+        console.log(producto)
         
         const div = document.createElement('div')
         div.classList.add('producto')

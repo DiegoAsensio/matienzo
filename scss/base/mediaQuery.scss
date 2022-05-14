@@ -4,7 +4,14 @@
     top: 15%;
     right: 12%;
     }
+}
 
+@media (max-width: 700px){
+#contenedor-productos{
+    max-width: 700px;
+}
 
-
+.producto{
+    max-width: 100%;
+}
 }
