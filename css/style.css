@@ -90,7 +90,7 @@
 .subtitulo span {
   background: linear-gradient(to right, #1a880b, #033d02);
   padding: 0 15px;
-  z-index: 99;
+  z-index: 90;
   position: relative;
 }
 
@@ -314,6 +314,7 @@ img {
 .modal-active {
   opacity: 1;
   visibility: visible;
+  z-index: 99;
 }
 
 .modal-carrito {

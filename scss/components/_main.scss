@@ -24,7 +24,7 @@
 .subtitulo span {
 	background: linear-gradient(to right, #1a880b, #033d02);
 	padding: 0 15px;
-	z-index: 99;
+	z-index: 90;
 	position: relative;
 }
 
@@ -173,6 +173,7 @@
     padding: 25px 0 120px 0;
     margin-bottom: 0%;
 }
+
 .field {
     margin-bottom: 10px;
 }
@@ -183,6 +184,7 @@
     line-height: 1.5;
     font-size: 14px;
 }
+
 #button{
     background: linear-gradient(to right, #1a880b, #033d02);
     color: white;
@@ -209,6 +211,7 @@ img {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .producto {
     max-width: 20%;
     padding: 10px;
@@ -216,6 +219,7 @@ img {
     margin-bottom: 20px;
     box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }
+
 .precioProducto {
     font-weight: 700;
 }
@@ -251,6 +255,7 @@ img {
 .modal-active {
     opacity: 1;
     visibility: visible;
+    z-index: 99;
 }
 
 .modal-carrito {
