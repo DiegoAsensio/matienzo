@@ -17,6 +17,7 @@ emailjs.sendForm(serviceID, templateID, this)
         title: `Su información nos ha llegado correctamente!`, 
         icon: 'success',
     });
+    document.getElementById('form').reset();
 }, (err) => {
     btn.value = 'Enviar';
     alert(JSON.stringify(err));
