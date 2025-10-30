@@ -1,164 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
+    <meta name="description" content="Aprende a preparar el mate perfecto - Tips y consejos materos">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous" defer></script>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- javascript -->
+    
+    <!-- Toastify -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script defer src="../js/stock.json"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    
+    <!-- Scripts -->
     <script defer src="../js/modal.js"></script>
     <script defer src="../js/main.js"></script>
-    <!-- Iconos -->
-    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
-    <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Tips materos</title>
+    
+    <title>Tips Materos - Tienda Matienzo 🧉</title>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg headerSections" aria-label="Navegación principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html" aria-label="Volver a inicio">
+                    <img class="w-50" src="../img/logo3.png" alt="Logo Tienda Matienzo" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon">
+                        <img src="../img/menuHamburguesa.png" alt="" width="28" height="28">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="tips.html">Tips Materos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center carrito">
+                        <button id="boton-carrito" aria-label="Abrir carrito">
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                            <span id="contadorCarrito" aria-live="polite">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<!-- header -->  
-  <header>
-    <nav class="navbar navbar-expand-lg headerSections">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img class="w-50" src="../img/logo3.png" alt="Logo matienzo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><img src="../img/menuHamburguesa.png" alt="logo"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-success" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-success" href="tips.html">Tips materos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-success" href="catalogo.html">Catálogo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-success" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-          <div class="d-flex justify-content-center carrito">
-            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-          </div>
+    <!-- Main -->
+    <main id="main-content" class="mainHeader">
+        <div class="container bodyHeader">
+            <!-- Preparación del Mate -->
+            <section class="row justify-content-center mb-5 pb-5">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="subtitulo">
+                        <span>Preparación</span>
+                    </h2>
+                    <h3 class="titulo">¿Cómo preparar un buen mate con montañita?</h3>
+                </div>
+
+                <!-- Paso 1 -->
+                <article class="col-lg-10 mb-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-4">
+                            <div class="tips-image-container">
+                                <img src="../img/img1.jpg" alt="Llenar el mate con yerba" class="img-fluid rounded-4 shadow" loading="lazy">
+                                <span class="step-badge">Paso 1</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tips-content">
+                                <h4 class="fs-3 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Preparar la yerba</h4>
+                                <p class="fs-5 lh-lg text-muted">
+                                    Llená las tres cuartas partes del mate con tu yerba preferida. 
+                                    No llenes hasta el borde, dejá espacio para formar la montañita.
+                                </p>
+                                <div class="tips-highlight mt-3 p-3 rounded-3" style="background: rgba(74, 124, 89, 0.1); border-left: 4px solid var(--color-verde-mate);">
+                                    <strong>💡 Tip:</strong> Usá yerba de buena calidad para un sabor más suave y duradero.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Paso 2 -->
+                <article class="col-lg-10 mb-5">
+                    <div class="row align-items-center g-4 flex-md-row-reverse">
+                        <div class="col-md-4">
+                            <div class="tips-image-container">
+                                <img src="../img/img2.jpg" alt="Formar la montañita" class="img-fluid rounded-4 shadow" loading="lazy">
+                                <span class="step-badge">Paso 2</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tips-content">
+                                <h4 class="fs-3 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Formar la montañita</h4>
+                                <p class="fs-5 lh-lg text-muted">
+                                    Invertí el mate, tapalo con la palma de la mano y agitalo ligeramente. 
+                                    Luego inclinalo para acumular la yerba en uno de sus lados.
+                                </p>
+                                <div class="tips-highlight mt-3 p-3 rounded-3" style="background: rgba(74, 124, 89, 0.1); border-left: 4px solid var(--color-verde-mate);">
+                                    <strong>💡 Tip:</strong> La montañita ayuda a que el mate dure más tiempo sin lavarse.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Paso 3 -->
+                <article class="col-lg-10 mb-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-4">
+                            <div class="tips-image-container">
+                                <img src="../img/img3.jpg" alt="Colocar la bombilla" class="img-fluid rounded-4 shadow" loading="lazy">
+                                <span class="step-badge">Paso 3</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tips-content">
+                                <h4 class="fs-3 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Colocar la bombilla</h4>
+                                <p class="fs-5 lh-lg text-muted">
+                                    Humedecé la yerba con una pequeña cantidad de agua tibia en la parte donde 
+                                    vas a colocar la bombilla. Esto ayuda a que se asiente.
+                                </p>
+                                <div class="tips-highlight mt-3 p-3 rounded-3" style="background: rgba(74, 124, 89, 0.1); border-left: 4px solid var(--color-verde-mate);">
+                                    <strong>💡 Tip:</strong> Una vez colocada la bombilla, no la muevas más.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Paso 4 -->
+                <article class="col-lg-10 mb-5">
+                    <div class="row align-items-center g-4 flex-md-row-reverse">
+                        <div class="col-md-4">
+                            <div class="tips-image-container">
+                                <img src="../img/img4.jpg" alt="Cebar el mate" class="img-fluid rounded-4 shadow" loading="lazy">
+                                <span class="step-badge">Paso 4</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tips-content">
+                                <h4 class="fs-3 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Cebar correctamente</h4>
+                                <p class="fs-5 lh-lg text-muted">
+                                    Cebá los mates con agua entre 70°C y 80°C sobre la yerba cercana a la bombilla, 
+                                    dejando siempre parte de la yerba seca en la montañita.
+                                </p>
+                                <div class="tips-highlight mt-3 p-3 rounded-3" style="background: rgba(74, 124, 89, 0.1); border-left: 4px solid var(--color-verde-mate);">
+                                    <strong>💡 Tip:</strong> No uses agua hirviendo, quema la yerba y le saca el sabor.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Curado del Mate -->
+            <section class="row justify-content-center mb-5 pb-5">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="subtitulo">
+                        <span>Curado</span>
+                    </h2>
+                    <h3 class="titulo">¿Cómo curar tu mate de madera o calabaza?</h3>
+                    <p class="lead text-muted">El curado es esencial para evitar sabores amargos y prolongar la vida de tu mate</p>
+                </div>
+
+                <!-- Curado Paso 1 -->
+                <article class="col-lg-10 mb-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-4">
+                            <div class="tips-image-container">
+                                <img src="../img/img5.jpg" alt="Untar el mate" class="img-fluid rounded-4 shadow" loading="lazy">
+                                <span class="step-badge">Paso 1</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tips-content">
+                                <h4 class="fs-3 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Untar con grasa</h4>
+                                <p class="fs-5 lh-lg text-muted">
+                                    Untá hasta la boca del mate con aceite o manteca. Esto sella la madera y evita 
+                                    que absorba demasiado líquido.
+                                </p>
+                                <div class="tips-highlight mt-3 p-3 rounded-3" style="background: rgba(212, 165, 116, 0.2); border-left: 4px solid var(--color-arena);">
+                                    <strong>🌟 Consejo:</strong> La manteca le da más sabor a la madera que el aceite.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Curado Paso 2 -->
+                <article class="col-lg-10 mb-5">
+                    <div class="row align-items-center g-4 flex-md-row-reverse">
+                        <div class="col-md-4">
+                            <div class="tips-image-container">
+                                <img src="../img/img6.jpg" alt="Llenar con yerba usada" class="img-fluid rounded-4 shadow" loading="lazy">
+                                <span class="step-badge">Paso 2</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tips-content">
+                                <h4 class="fs-3 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Curar durante 24 horas</h4>
+                                <p class="fs-5 lh-lg text-muted">
+                                    Llená a tope con yerba usada y andá humedeciendo durante el día con pequeñas 
+                                    cantidades de agua.
+                                </p>
+                                <div class="tips-highlight mt-3 p-3 rounded-3" style="background: rgba(212, 165, 116, 0.2); border-left: 4px solid var(--color-arena);">
+                                    <strong>🌟 Importante:</strong> Humedecé, no llenes de agua. Es un proceso gradual.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Curado Paso 3 -->
+                <article class="col-lg-10 mb-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-4">
+                            <div class="tips-image-container">
+                                <img src="../img/img7.jpg" alt="Enjuagar el mate" class="img-fluid rounded-4 shadow" loading="lazy">
+                                <span class="step-badge">Paso 3</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="tips-content">
+                                <h4 class="fs-3 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Finalizar el curado</h4>
+                                <p class="fs-5 lh-lg text-muted">
+                                    Después de 24hs, retirá la yerba y enjuagá bien el mate con agua tibia. 
+                                    Dejalo secar al aire libre.
+                                </p>
+                                <div class="tips-highlight mt-3 p-3 rounded-3" style="background: rgba(212, 165, 116, 0.2); border-left: 4px solid var(--color-arena);">
+                                    <strong>🌟 Tranqui:</strong> Si queda un poco de manteca no pasa nada, ayuda a sellar.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Limpieza de la Bombilla -->
+            <section class="row justify-content-center mb-5 pb-5">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="subtitulo">
+                        <span>Mantenimiento</span>
+                    </h2>
+                    <h3 class="titulo">¿Cómo limpiar tu bombilla?</h3>
+                    <p class="lead text-muted">Una bombilla limpia garantiza un mate con mejor sabor y más higiénico</p>
+                </div>
+
+                <div class="col-lg-10">
+                    <div class="row g-4">
+                        <!-- Método 1 -->
+                        <div class="col-md-6">
+                            <article class="h-100 p-4 rounded-4 shadow-sm" style="background: var(--color-blanco); border-top: 5px solid var(--color-verde-mate);">
+                                <div class="text-center mb-4">
+                                    <img src="../img/img8.jpg" alt="Lavar bombilla" class="img-fluid rounded-3 shadow-sm" loading="lazy" style="max-height: 250px; object-fit: cover; width: 100%;">
+                                </div>
+                                <h4 class="fs-4 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Limpieza diaria</h4>
+                                <ul class="list-unstyled fs-6 lh-lg">
+                                    <li class="mb-3">
+                                        <i class="fas fa-check-circle me-2" style="color: var(--color-verde-mate);"></i>
+                                        Lavala después de cada uso con agua caliente (85° o más) y detergente
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fas fa-check-circle me-2" style="color: var(--color-verde-mate);"></i>
+                                        Si usás lavavajillas, asegurate que tenga temperatura bien alta
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check-circle me-2" style="color: var(--color-verde-mate);"></i>
+                                        Dejala secar completamente antes de guardarla
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <!-- Método 2 -->
+                        <div class="col-md-6">
+                            <article class="h-100 p-4 rounded-4 shadow-sm" style="background: var(--color-blanco); border-top: 5px solid var(--color-tierra);">
+                                <div class="text-center mb-4">
+                                    <img src="../img/img9.jpg" alt="Limpieza profunda bombilla" class="img-fluid rounded-3 shadow-sm" loading="lazy" style="max-height: 250px; object-fit: cover; width: 100%;">
+                                </div>
+                                <h4 class="fs-4 fw-bold mb-3" style="color: var(--color-tierra-oscuro);">Limpieza profunda</h4>
+                                <ul class="list-unstyled fs-6 lh-lg">
+                                    <li class="mb-3">
+                                        <i class="fas fa-star me-2" style="color: var(--color-arena);"></i>
+                                        Sumergila en agua hirviendo con dos cucharadas de bicarbonato
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fas fa-star me-2" style="color: var(--color-arena);"></i>
+                                        Dejala actuar por 10-15 minutos
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star me-2" style="color: var(--color-arena);"></i>
+                                        Para sedimentos difíciles, usá un cepillo especial para bombillas
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>
-    </nav>
-  </header>
-<!-- fin header -->  
+    </main>
 
-
-<!-- main -->
-<main class="mainHeader">
-  <div class="container bodyHeader">
-    <div class="row nosotros justify-content-center">
-      <div class="col-12 pt-5 text-center">
-        <h2 class="titulo">CÓMO PREPARAR UN BUEN MATE Y CON MONTAÑITA?</h2>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img1.jpg" alt="Prepración del mate">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-center">
-        <p class="fs-3">1) Llená las tres cuartas partes del mate con tu yerba preferida.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img2.jpg" alt="Prepración del mate">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-center">
-        <p class="fs-3">2) Invertí el mate, tapalo con la palma de la mano y agitalo ligeramente. Inclinalo para acumular la yerba en uno de sus lados.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img3.jpg" alt="Prepración del mate">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-center">
-        <p class="fs-3">3) Humedecé la yerba con una pequeña cantidad de agua tibia y colocá la bombilla.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img4.jpg" alt="Prepración del mate">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-center">
-        <p class="fs-3">4) Cebá los mates con agua entre 70ºC y 80ºC sobre la yerba cercana a la bombilla, dejando siempre parte de la yerba seca.</p>
-      </div>
-
-      <div class="col-12 pt-5 text-center">
-        <h2 class="titulo">CÓMO CURAR TU MATE DE MADERA O DE CALABAZA?</h2>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img5.jpg" alt="Curado del mate">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-center">
-        <p class="fs-3">1) Untá hasta la boca del mate con aceite o manteca.
-          TIP: La manteca le da más sabor a la madera.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img6.jpg" alt="Curado del mate">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-center">
-        <p class="fs-3">2) Llená a tope con yerba usada y andá humedeciendo durante el día, con pequeñas cantidades de agua.
-          TIP: humedecé, no llenes de agua.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img7.jpg" alt="Curado del mate">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-center">
-        <p class="fs-3">3) Después de 24hs, retirá y enjuagá.
-          TIP: si queda un poco de manteca no pasa nada, eso hace que se termine de sellar.</p>
-      </div>
-
-      <div class="col-12 pt-5 text-center">
-        <h2 class="titulo">CÓMO LIMPIAR TU BOMBILLA?</h2>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img8.jpg" alt="Lavado de bombilla">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-start">
-        <p class="fs-3">– Lavala después de cada uso con agua caliente (85° grados o más) y detergente.
-          <br>
-          – Si usás lavavajillas, asegurate que esté seteado con temperatura bien alta.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center pb-5 pe-5">
-        <img class="w-50" src="../img/img9.jpg" alt="Lavado de bombilla">
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 text-start d-flex align-items-start">
-        <p class="fs-3">– Para una limpieza más profunda, sumergila en agua hirviendo con dos cucharadas de bicarbonato de sodio.
-        <br>
-          – En caso de que hayan quedado sedimentos podés utilizar un cepillo de cerdas especial para bombillas.</p>
-      </div>
+    <!-- Modal Carrito -->
+    <div class="modal-contenedor" role="dialog" aria-labelledby="modal-titulo">
+        <div class="modal-carrito">
+            <h3 id="modal-titulo">🧉 Tu Carrito</h3>
+            <button id="carritoCerrar" aria-label="Cerrar carrito">
+                <i class="fas fa-times-circle" aria-hidden="true"></i>
+            </button>
+            <div id="carrito-contenedor" aria-live="polite"></div>
+            <p class="precioProducto fs-4 fw-bold mt-4">
+                Total: $<span id="precioTotal">0</span>
+            </p>
+            <button id="vaciar-carrito" class="boton-agregar">
+                <i class="fas fa-trash-alt"></i> Vaciar Carrito
+            </button>
+        </div>
     </div>
-  </div>
-</main>
-<!-- fin main -->
 
-<!-- carrito -->
-<div class="modal-contenedor">
-  <div class="modal-carrito">
-      <h3>Carrito</h3>
-      <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
-      <div id="carrito-contenedor"></div>
-      <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-      <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
-  </div>
-</div>
+    <!-- Footer -->
+    <footer>
+        <nav aria-label="WhatsApp">
+            <ul class="logoFixed">
+                <li>
+                    <a href="https://wa.me/+541165163397" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <img src="../img/logo-whatsapp.webp" width="65" height="65" alt="" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 
-<!-- footer -->
-<footer>
-  <nav>
-    <ul class="logoFixed">
-      <li><a href="https://wa.me/+541165163397" target="_blank"><img src="../img/logo-whatsapp.webp" width="50" height="50" alt="Whatsapp"></a></li>
-    </ul>
-  </nav>
-</footer>
-<!-- fin footer -->
-
-
-
-<!-- bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous" defer></script>
 </body>
 </html>
